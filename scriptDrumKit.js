@@ -1,16 +1,16 @@
 // Sounds
-const cChord = new Audio('/drumkit/sounds/C.wav');
-const csChord = new Audio('/drumkit/sounds/C_s.wav');
-const dChord = new Audio('/drumkit/sounds/D.wav');
-const dsChord = new Audio('/drumkit/sounds/D_s.wav');
-const eChord = new Audio('/drumkit/sounds/E.wav');
-const fChord = new Audio('/drumkit/sounds/F.wav');
-const fsChord = new Audio('/drumkit/sounds/F_s.wav');
-const gChord = new Audio('/drumkit/sounds/G.wav');
-const gsChord = new Audio('/drumkit/sounds/G_s.wav');
-const aChord = new Audio('/drumkit/sounds/A.wav');
-const bbChord = new Audio('/drumkit/sounds/Bb.wav');
-const bChord = new Audio('/drumkit/sounds/B.wav');
+const cChord = new Audio('sounds/C.wav');
+const csChord = new Audio('sounds/C_s.wav');
+const dChord = new Audio('sounds/D.wav');
+const dsChord = new Audio('sounds/D_s.wav');
+const eChord = new Audio('sounds/E.wav');
+const fChord = new Audio('sounds/F.wav');
+const fsChord = new Audio('sounds/F_s.wav');
+const gChord = new Audio('sounds/G.wav');
+const gsChord = new Audio('sounds/G_s.wav');
+const aChord = new Audio('sounds/A.wav');
+const bbChord = new Audio('sounds/Bb.wav');
+const bChord = new Audio('sounds/B.wav');
 
 // keys 
 const cKey = document.getElementById("cKey");
