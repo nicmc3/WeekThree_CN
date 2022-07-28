@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif; 
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+} body {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+} hr {
+    width: 50vw;
+    border: 2px solid #536181;
+}
+#containerButtons {
+    display: flex;
+    flex-direction: row;
+} #containerButtons button {
+    margin: 15px;
+    font-size: 16px; 
+    background-color: #6c82b5;
+} #containerButtons button:hover {
+    cursor: pointer;
+    background-color: #536181;
+}
+
+/* //////////////////////////////// */
+#wormImg {
+    display: block;
+} #noWormImg {
+    display: none;
+}
+#selectBtn {
+    background-color: #6c82b5;
+    width: 150px;
+    margin: 10px;
+    transition: 0.5s ease;
+} #selectBtn:hover {
+    background-color: #536181;
+    cursor: pointer;
+    transform: scale(1.05);
+} #selectBtn:active {
+    transform: scale(0.95);
+}
+/* ///////////////////////////////// */
+#submitBtn {
+    background-color: #6c82b5;
+    width: 150px;
+    margin: 10px;
+    transition: 0.5s ease;
+} #submitBtn:hover {
+    background-color: #536181;
+    cursor: pointer;
+    transform: scale(1.05);
+} #submitBtn:active {
+    transform: scale(0.95);
+}
+#imgTag {
+    width: 500px;
+    border: 2px solid #536181;
+    padding: 5px;
+}
+/* ///////////////////////////////// */
+h2 {
+    font-weight: bold;
+    font-size: 32px;
+    color: #536181;
+    width: 50vw;
+    border: 2px solid #536181;
+} #submitColour {
+    background-color: #6c82b5;
+    width: 150px;
+    margin: 10px;
+    transition: 0.5s ease;
+} #submitColour:hover {
+    background-color: #536181;
+    cursor: pointer;
+    transform: scale(1.05);
+} #submitColour:active {
+    transform: scale(0.95);
+}
+/* ///////////////////////////////// */ 
+h3 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #536181;
+    width: 25vw;
+    border: 2px solid #536181;
+}
+p {
+    font-size: 18px;
+    padding: 5px;
+    border: 2px solid #536181;
+}

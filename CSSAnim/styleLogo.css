@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#CNLogo {
+    transition: 1s ease-out;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+}
+#CNLogo:hover {
+    animation: logoRotate 1.3s ease;
+}
+
+@keyframes logoRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(-10deg);
+    }
+    80% {
+        transform: rotate(370deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#containerButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} #containerButtons button {
+    margin: 15px;
+    font-size: 16px; 
+    background-color: white;
+    box-shadow: 0px 2px #244c9c;
+    transition: 0.1s linear;
+} #containerButtons button:hover {
+    cursor: pointer;
+    background-color: #f1f1f1;
+    box-shadow: 0px 2px #f4b42c;
+}
+
+.center {
+    display: block;
+    margin-top: 10%;
+}
+
+.containerLogoButton {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 800px;
+    height: fit-content;
+}
+
+.btnColumnLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 40vh;
+    float: left;
+    width: auto;
+    height: auto;
+}
+.btnColumnRight {
+    display: flex;
+    flex-direction: column;
+    gap: 40vh;
+    float: right;
+    width: auto;
+    height: auto;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+
+    box-shadow: 3px 2px black;
+
+    transition: linear 0.2s;
+} button:hover {
+    cursor: pointer;
+    box-shadow: 5px 3px black;
+}
+.btnOne {
+    background-color: #244c9c;
+    color: white; 
+    border-top-left-radius: 50px;
+} .btnOne:hover {
+    color: white;
+    animation: buttonOne 1s infinite ease-in-out;
+}
+.btnTwo {
+    background-color: white;
+    color: #f4b42c; 
+    border-bottom-left-radius: 50px;
+} .btnTwo:hover {
+    animation: buttonTwo 1s infinite ease-in-out;
+    color: #f4b42c;
+}
+.btnThree {
+    background-color: #f4b42c;
+    color: white; 
+    border-top-right-radius: 50px;
+} .btnThree:hover {
+    animation: buttonThree 1s infinite ease-in-out;
+    color: white;
+}
+.btnFour {
+    background-color: white;
+    color: #244c9c; 
+    border-bottom-right-radius: 50px;
+} .btnFour:hover {
+    animation: buttonFour 1s infinite ease-in-out;
+    color: #244c9c;
+}
+
+@keyframes buttonOne {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+@keyframes buttonTwo {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(20deg);
+    }
+}
+@keyframes buttonThree {
+    0%, 100% {
+        transform:skew(-20deg)
+    }
+    50% {
+        transform: skew(20deg);
+    }
+}
+@keyframes buttonFour {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .containerLogoButton {
+        max-width: 700px;
+    }
+}
+@media only screen and (max-width: 200px) {
+    .containerLogoButton {
+        max-width: 200px;
+        max-height: 200px;
+    }
+}

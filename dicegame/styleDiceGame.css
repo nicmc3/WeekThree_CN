@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
+
+* {
+    font-family: 'saira', sans-serif;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+#containerButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} #containerButtons button {
+    margin: 5px;
+    background-color: white;
+    transition: 0.2s ease;
+} #containerButtons button:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+    transform: scale(1.05);
+}
+.countPlayer {
+    margin: 5px;
+    background-color: white;
+    transition: 0.2s ease;
+} .countPlayer:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+    transform: scale(1.05);
+}
+/* ///////////////// */
+.containerGame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    height: 75vh;
+    border: 5px solid black;
+}
+
+#playAgain {
+    display: none;
+} #countPlayer {
+    display: none;
+}
+
+#playerResultDie {
+    width: 300px;
+}
+#winnerText, 
+#loserText {
+    font-weight: bold;
+    display: none;
+}
+#rollBtn,
+#playAgain {
+    margin: 5px;
+    background-color: white;
+    transition: 0.2s ease;
+} #rollBtn:hover,
+#playAgain:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+    transform: scale(1.05);
+} #rollBtn:active,
+#playAgain:active {
+    transform: scale(0.95);
+}

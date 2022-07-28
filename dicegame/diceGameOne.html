@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styleDiceGame.css">
+  <title>Dice Game</title>
+</head>
+
+<body>
+  <div id="containerButtons">
+    <a href="/index.html"><button>home</button></a>
+    <a href="/jsdom/activities.html"><button>activities</button></a>
+    <a href="/jsdom/shoppingList.html"><button>shopping list</button></a>
+    <a href="/drumkit/drumKit.html"><button>drum kit</button></a>
+    <a href="/dicegame/diceGame.html"><button>dice game</button></a>
+    <a href="/CSSAnim/cnLogo.html"><button>CSS animations</button></a>
+  </div>
+  <!--  -->
+  <h1>Dice Game</h1>
+  <h2>1 player</h2>
+  <a href="/dicegame/diceGame.html"><button class="countPlayer">back</button></a>
+  <!--  -->
+  <div class="containerGame">
+    <p id="winnerText">Congratulations!</p>
+    <p id="loserText">Maybe next time!</p>
+    <h3 id="scoreText">Score</h3>
+    <p id="playerScoreTotal">0</p>
+    <h3 id="rolledText">Rolled</h3>
+    <p id="playerResult">0</p>
+    <img src="/dicegame/images/rollNull.png" alt="" id="playerResultDie">
+    <button id="rollBtn">ROLL</button>
+    <a href="/dicegame/diceGameOne.html"><button id="playAgain">Play again?</button></a>
+  </div>
+
+  <!--  -->
+  <script src="scriptDiceGameOne.js"></script>
+</body>
+
+</html>

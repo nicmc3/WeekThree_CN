@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styleList.css">
+    <title>javascript</title>
+</head>
+
+<body>
+    <div class="containerHome">
+        <a href="/index.html"><button>home</button></a>
+        <a href="/jsdom/activities.html"><button>activities</button></a>
+        <a href="/jsdom/shoppingList.html"><button>shopping list</button></a>
+        <a href="/drumkit/drumKit.html"><button>drum kit</button></a>
+        <a href="/dicegame/diceGame.html"><button>dice game</button></a>
+        <a href="/CSSAnim/cnLogo.html"><button>CSS animations</button></a>
+    </div>
+    <div class="container">
+        <h1>Shopping List</h1>
+        <div>
+            <input type="text" placeholder="enter here" id="itemInput">
+            <button id="submitButton">Submit</button>
+
+            <ul id="shoppingList">
+            </ul>
+        </div>
+        <button id="clearListButton">clear list</button>
+    </div>
+    <hr>
+    <div class="containerSmall">
+        <h2>How to Use</h2>
+        <p>type an item to add to the list. hit submit or enter!</p>
+        <p>select an item to cross it out. select again to undo!</p>
+        <p>once you click clear list, you cannot get your list back.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

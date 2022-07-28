@@ -1,0 +1,96 @@
+* {
+  color: #F0FAF9;
+  /* color: #0b4352; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    #54DEFD 0%,
+    #8BD7D2 50%,
+    #00BD9D 100%
+  );
+}
+
+input {
+    background-color: #F0FAF9;
+    color: #07243b;
+}
+
+.containerHome {
+  margin: 20px;
+}
+.containerHome button {
+  margin: 5px;
+}
+.containerHome button:hover {
+  background-color: #07243b21;
+  cursor: pointer;
+  margin: 5px;
+}
+.container {
+  padding: 10px;
+  border: 5px solid #F0FAF9;
+
+  background-color: #0306243a;
+}
+.containerSmall {
+  padding: 10px;
+  margin: 15px;
+  border: 5px solid #F0FAF9;
+  font-size: 12px;
+
+  background-color: #0306243a;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+}
+
+li:hover {
+  cursor: pointer;
+  background-color: #074d504b;
+}
+
+.done {
+  animation: 0.5s doneAnim forwards;
+}
+
+button {
+    background-color: #49c6e500;
+    border: 2px solid #F0FAF9;
+
+    transition: 0.5s ease;
+}
+button:hover {
+    background-color: #49c6e538;
+}
+button:active {
+    transform: scale(0.9);
+}
+
+@keyframes doneAnim {
+  0% {
+    text-decoration: none;
+    opacity: 1;
+    font-size: 16px;
+  }
+  100% {
+    text-decoration: line-through;
+    opacity: 0.5;
+    font-size: 14px;
+  }
+}
