@@ -9,10 +9,10 @@ const scoreText = document.getElementById("scoreText");
 const rolledText = document.getElementById("rolledText");
 const playBtn = document.getElementById("playBtn"); 
 
-const containerGame = document.getElementById("containerGame"); 
-const containerTutorial = document.getElementById("containerTutorial"); 
+const game = document.getElementById("game"); 
+const tutorial = document.getElementById("tutorial"); 
 
-containerGame.style.display = "none"; 
+game.style.display = "none"; 
 
 let playerScore = 0;
 let diceResult = 0;
@@ -54,8 +54,8 @@ const checkWin = () => {
 }
 
 playBtn.addEventListener("click", () => {
-    containerGame.style.display = "flex"; 
-    containerTutorial.style.display = "none";
+    game.style.display = "block"; 
+    tutorial.style.display = "none";
 })
 
 rollBtn.addEventListener("click", () => {

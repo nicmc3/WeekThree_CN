@@ -37,15 +37,7 @@ body {
     transform: scale(1.05);
 }
 /* ///////////////// */
-#containerGame {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 75vw;
-    height: 75vh;
-    border: 5px solid black;
-} #containerTutorial {
+.containerGame {
     display: flex;
     flex-direction: column;
     justify-content: center;

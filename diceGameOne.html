@@ -21,7 +21,7 @@
   <h1>Dice Game</h1>
   <h2>1 player</h2>
   <a href="dicegame/diceGame.html"><button class="countPlayer">back</button></a>
-  <div id="containerTutorial">
+  <div class="containerGame" id="tutorial">
     <h2>How to play</h2>
     <p>press roll to roll the dice!</p>
     <p>you win when you reach an added total of 20 or more!</p>
@@ -29,16 +29,18 @@
     <button id="playBtn">let's go!</button>
   </div>
   <!--  -->
-  <div id="containerGame">
-    <p id="winnerText">Congratulations!</p>
-    <p id="loserText">Maybe next time!</p>
-    <h3 id="scoreText">Score</h3>
-    <p id="playerScoreTotal">0</p>
-    <h3 id="rolledText">Rolled</h3>
-    <p id="playerResult">0</p>
-    <img src="images/rollNull.png" alt="" id="playerResultDie">
-    <button id="rollBtn">ROLL</button>
-    <a href="diceGameOne.html"><button id="playAgain">Play again?</button></a>
+  <div id="game">
+    <div class="containerGame">
+      <p id="winnerText">Congratulations!</p>
+      <p id="loserText">Maybe next time!</p>
+      <h3 id="scoreText">Score</h3>
+      <p id="playerScoreTotal">0</p>
+      <h3 id="rolledText">Rolled</h3>
+      <p id="playerResult">0</p>
+      <img src="images/rollNull.png" alt="" id="playerResultDie">
+      <button id="rollBtn">ROLL</button>
+      <a href="diceGameOne.html"><button id="playAgain">Play again?</button></a>
+    </div>
   </div>
   <!--  -->
   <script src="scriptDiceGameOne.js"></script>
