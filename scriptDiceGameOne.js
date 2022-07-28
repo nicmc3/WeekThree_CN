@@ -18,22 +18,22 @@ const rollDice = () => {
     playerScore += diceResult;
     switch (diceResult) {
         case 1:
-            playerResultDie.src = "/dicegame/images/rollOne.png"; 
+            playerResultDie.src = "/images/rollOne.png"; 
             break;
         case 2:
-            playerResultDie.src = "/dicegame/images/rollTwo.png"; 
+            playerResultDie.src = "/images/rollTwo.png"; 
             break;
         case 3:
-            playerResultDie.src = "/dicegame/images/rollThree.png"; 
+            playerResultDie.src = "/images/rollThree.png"; 
             break;
         case 4:
-            playerResultDie.src = "/dicegame/images/rollFour.png"; 
+            playerResultDie.src = "/images/rollFour.png"; 
             break;
         case 5:
-            playerResultDie.src = "/dicegame/images/rollFive.png"; 
+            playerResultDie.src = "/images/rollFive.png"; 
             break;
         case 6:
-            playerResultDie.src = "/dicegame/images/rollSix.png"; 
+            playerResultDie.src = "/images/rollSix.png"; 
             break;
     }
 
