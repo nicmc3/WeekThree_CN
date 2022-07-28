@@ -37,7 +37,15 @@ body {
     transform: scale(1.05);
 }
 /* ///////////////// */
-.containerGame {
+#containerGame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    height: 75vh;
+    border: 5px solid black;
+} #containerTutorial {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,16 +70,19 @@ body {
     display: none;
 }
 #rollBtn,
-#playAgain {
+#playAgain,
+#playBtn {
     margin: 5px;
     background-color: white;
     transition: 0.2s ease;
 } #rollBtn:hover,
-#playAgain:hover {
+#playAgain:hover,
+#playBtn:hover {
     cursor: pointer;
     background-color: lightgrey;
     transform: scale(1.05);
 } #rollBtn:active,
-#playAgain:active {
+#playAgain:active,
+#playBtn:active {
     transform: scale(0.95);
 }

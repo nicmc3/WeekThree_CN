@@ -7,6 +7,12 @@ const winnerText = document.getElementById("winnerText");
 const loserText = document.getElementById("loserText");
 const scoreText = document.getElementById("scoreText");
 const rolledText = document.getElementById("rolledText");
+const playBtn = document.getElementById("playBtn"); 
+
+const containerGame = document.getElementById("containerGame"); 
+const containerTutorial = document.getElementById("containerTutorial"); 
+
+containerGame.style.display = "none"; 
 
 let playerScore = 0;
 let diceResult = 0;
@@ -46,6 +52,11 @@ const checkWin = () => {
         playerWin = true;
     }
 }
+
+playBtn.addEventListener("click", () => {
+    containerGame.style.display = "flex"; 
+    containerTutorial.style.display = "none";
+})
 
 rollBtn.addEventListener("click", () => {
     rollDice();

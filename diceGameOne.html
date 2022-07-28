@@ -21,8 +21,15 @@
   <h1>Dice Game</h1>
   <h2>1 player</h2>
   <a href="dicegame/diceGame.html"><button class="countPlayer">back</button></a>
+  <div id="containerTutorial">
+    <h2>How to play</h2>
+    <p>press roll to roll the dice!</p>
+    <p>you win when you reach an added total of 20 or more!</p>
+    <p>however, you will lose if you roll a 1...</p>
+    <button id="playBtn">let's go!</button>
+  </div>
   <!--  -->
-  <div class="containerGame">
+  <div id="containerGame">
     <p id="winnerText">Congratulations!</p>
     <p id="loserText">Maybe next time!</p>
     <h3 id="scoreText">Score</h3>
@@ -33,7 +40,6 @@
     <button id="rollBtn">ROLL</button>
     <a href="diceGameOne.html"><button id="playAgain">Play again?</button></a>
   </div>
-
   <!--  -->
   <script src="scriptDiceGameOne.js"></script>
 </body>
