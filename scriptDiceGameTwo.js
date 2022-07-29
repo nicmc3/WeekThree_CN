@@ -33,6 +33,7 @@ let playerTwoTurn = false;
 // hiding game screen while tutorial shows
 gameTwo.style.display = "none"; 
 endScreen.style.display = "none"; 
+tutorial.style.display = "block";
 
 // setting starting stats 
 let playerOneScore = 0; 
