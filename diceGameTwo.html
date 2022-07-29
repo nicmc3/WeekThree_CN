@@ -21,7 +21,53 @@
     <h1>Dice Game</h1>
     <h2>2 players</h2>
     <a href="diceGame.html"><button class="countPlayer">back</button></a>
-    <h2>WORK IN PROGRESS</h2>
+    <div class="containerGame" id="tutorial">
+        <h2>How to play</h2>
+        <p>player 1 goes first!</p>
+        <p>take your chance and roll - keep going to get the highest score you can!</p>
+        <p>...however, you will lose if you roll a 1.</p>
+        <p>when satisifed with your score, press hold to move to player 2's turn!</p>
+        <p>whichever player scores higher, wins!</p>
+        <button id="playBtn">new game</button>
+      </div>
+    <!--  -->
+    <div class="containerGame" id="endScreen">
+        <p id="winner"></p>
+        <p id="loser"></p>
+        <br>
+        <a href="diceGameTwo.html"><button id="playAgainBtn">play again?</button></a>
+    </div>
+    <div id="gameTwo">
+        <div class="containerGame">
+            <div class="containerGameTwo">
+                <!-- Player 1 -->
+                <div class="playerSide" id="playerOneSide">
+                    <span id="playerOneSideOverlay"></span>
+                    <h1>Player 1</h1>
+                    <h3 id="scoreOneText">Score</h3>
+                    <p id="playerOneScoreTotal">0</p>
+                    <h3 id="rolledOneText">Rolled</h3>
+                    <p id="playerOneResult">0</p>
+                    <img src="images/rollNull.png" alt="" id="playerOneResultDie">
+                    <button id="holdScore">HOLD</button>
+                    <button id="rollBtnOne">ROLL</button>
+                </div>
+                <span class="vl"></span>
+                <!-- Player 2 -->
+                <div class="playerSide" id="playerTwoSide">
+                    <span id="playerTwoSideOverlay"></span>
+                    <h1>Player 2</h1>
+                    <h3 id="scoreTwoText">Score</h3>
+                    <p id="playerTwoScoreTotal">0</p>
+                    <h3 id="rolledTwoText">Rolled</h3>
+                    <p id="playerTwoResult">0</p>
+                    <img src="images/rollNull.png" alt="" id="playerTwoResultDie">
+                    <button id="rollBtnTwo">ROLL</button>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+    </div>
     <!--  -->
     <script src="scriptDiceGameTwo.js"></script>
 </body>

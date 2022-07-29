@@ -15,7 +15,16 @@
 } hr {
     width: 50vw;
     border: 2px solid #536181;
+} 
+a:visited {
+    font-style: none;
+    text-transform: none; 
+    text-decoration: none;
+    color: black;
 }
+
+
+
 #containerButtons {
     display: flex;
     flex-direction: row;
