@@ -15,7 +15,6 @@ body {
 
 .vl {
     border-left: 5px solid black;
-    height: 74vh;
   }
 
 #containerButtons {
@@ -50,13 +49,18 @@ body {
     width: 75vw;
     height: 75vh;
     border: 5px solid black;
+    height: fit-content;
+
+    overflow: hidden;
 } .containerGameTwo {
     display: flex;
     flex-direction: row;
     margin: 5px;
     padding: 5px;
     width: 75vw;
-    height: fit-content
+    height: fit-content; 
+
+    overflow: hidden;
 } .containerGameTwo img {
     width: 200px;
 }
@@ -114,23 +118,8 @@ body {
     align-self: center;
     width: 50vw;
     height: fit-content;
-}
 
-#playerOneSideOverlay {
-    position: absolute;
-    pointer-events: none;
-    display: block;
-    width: 37.5vw;
-    height: 74vh;
-    background-color: #00000000;
-}
-#playerTwoSideOverlay {
-    position: absolute;
-    pointer-events: none;
-    display: block;
-    width: 37.5vw;
-    height: 74vh;
-    background-color: #00000030;
+    overflow: hidden;
 }
 
 #winnerOne, 

@@ -1,6 +1,6 @@
 // for greying out player sides when it is not their turn 
-const playerOneSide = document.getElementById("playerOneSideOverlay"); 
-const playerTwoSide = document.getElementById("playerTwoSideOverlay"); 
+const playerOneSide = document.getElementById("playerOneSide"); 
+const playerTwoSide = document.getElementById("playerTwoSide"); 
 
 // player 1 variables 
 const scoreOneText = document.getElementById("scoreOneText"); 
@@ -44,6 +44,14 @@ let playerOneWin = false;
 let playerTwoWin = false; 
 let diceResultP1 = 0; 
 let diceResultP2 = 0; 
+
+// styling player two elements 
+playerTwoSide.style.backgroundColor = "#D9D9D9";
+playerTwoSide.style.color = "#A3A3A3";
+rollBtnTwo.style.backgroundColor = "#D9D9D9";
+rollBtnTwo.style.color = "#A3A3A3";
+rollBtnTwo.style.border = "2px solid #A3A3A3";
+
 
 // functions
 const rollDiceP1 = () => {
@@ -129,8 +137,20 @@ playBtn.addEventListener("click", () => {
 
 holdScore.addEventListener("click", () => {
     playerHold = true;
-    playerOneSide.style.backgroundColor = "#00000030";
-    playerTwoSide.style.backgroundColor = "#00000000";
+    playerOneSide.style.backgroundColor = "#D9D9D9";
+    playerOneSide.style.color = "#A3A3A3";
+    holdScore.style.backgroundColor = "#D9D9D9";
+    holdScore.style.color = "#A3A3A3";
+    holdScore.style.border = "2px solid #A3A3A3";
+    rollBtnOne.style.backgroundColor = "#D9D9D9";
+    rollBtnOne.style.color = "#A3A3A3";
+    rollBtnOne.style.border = "2px solid #A3A3A3";
+
+    playerTwoSide.style.backgroundColor = "#FFFFFF";
+    playerTwoSide.style.color = "black";
+    rollBtnTwo.style.backgroundColor = "#FFFFFF";
+    rollBtnTwo.style.color = "black";
+    rollBtnTwo.style.border = "2px solid black";
 })
 
 rollBtnOne.addEventListener("click", () => {
