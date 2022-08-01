@@ -4,8 +4,8 @@ const playerScoreTotal = document.getElementById("playerScoreTotal");
 const playerResult = document.getElementById("playerResult");
 const playerResultDie = document.getElementById("playerResultDie");
 const winnerText = document.getElementById("winnerText"); 
-const loserText = document.getElementById("loserText");
-const scoreText = document.getElementById("scoreText");
+const winner = document.getElementById("winner"); 
+const loser = document.getElementById("loser"); 
 const rolledText = document.getElementById("rolledText");
 const playBtn = document.getElementById("playBtn"); 
 
@@ -13,6 +13,7 @@ const game = document.getElementById("game");
 const tutorial = document.getElementById("tutorial"); 
 
 game.style.display = "none"; 
+tutorial.style.display = "block";
 
 let playerScore = 0;
 let diceResult = 0;
@@ -47,8 +48,10 @@ const rollDice = () => {
 
 const checkWin = () => {
     if (diceResult == 1) {
+        loser.innerHTML = "Better luck next time..."; 
         playerLose = true;
     } else if (playerScore >= 20) {
+        winner.innerHTML = "Congratulations!"; 
         playerWin = true;
     }
 }
